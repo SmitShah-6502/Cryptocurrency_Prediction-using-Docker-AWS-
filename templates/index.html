@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cryptocurrency Price Prediction</h1>
+        <p>Enter a cryptocurrency symbol (e.g., BTCUSDT, ETHUSDT, BNBUSDT):</p>
+        <input type="text" id="cryptoSymbol" placeholder="Enter Symbol">
+        <button onclick="predictPrice()">Predict Price</button>
+        <h2 id="result"></h2>
+        <div id="recommendation" class="info"></div>
+        <div id="price_change" class="info"></div>
+        <div id="volatility" class="info"></div>
+        <div id="trend" class="info"></div>
+        <div id="sentiment" class="info"></div>
+        <div id="portfolio_return" class="info"></div>
+        <div id="alerts" class="info"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
